@@ -57,7 +57,6 @@ export default {
       return product.price;
     },
   },
-  update: {},
   computed: {
     cart: {
       get() {

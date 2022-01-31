@@ -5,12 +5,7 @@
         <v-toolbar-title>Order Spark</v-toolbar-title>
       </div>
       <v-spacer></v-spacer>
-      <router-link to="/" class="ma-2" color=" darken-2" dark>
-        <v-icon dark left> mdi-arrow-left </v-icon>Back
-      </router-link>
-      <router-link to="/cart" text>
-        <v-icon>mdi-cart</v-icon>
-      </router-link>
+      <CartDialog />
     </v-app-bar>
 
     <v-main>
@@ -20,7 +15,7 @@
 </template>
 
 <script>
-// import Cart from "@/components/Cart";
+import CartDialog from "@/components/CartDialog";
 export default {
   name: "App",
 
@@ -28,7 +23,7 @@ export default {
     //
   }),
   components: {
-    // Cart,
+    CartDialog,
   },
 };
 </script>
